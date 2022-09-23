@@ -7,5 +7,22 @@ function results() {
     var divisao = (n2 * 100) / n1 
     res.innerHTML = `Your Porcentage is <strong>${divisao.toFixed(0)} %</strong>`
 
+    if (divisao >= 0 && divisao <= 30) {
+        document.body.style.background = '#FF662A'
+        document.getElementById('calc').style.background = '#FF662A'
+        
+    } else if (divisao >= 31 && divisao <= 50) {
+        document.body.style.background = '#FFE428'
+        document.getElementById('calc').style.background = '#FFE428'  
+
+    } else if (divisao >= 51 && divisao <= 80) {
+        document.body.style.background = '#93E060'
+        document.getElementById('calc').style.background = '#93E060'
+
+    } else if (divisao >= 81 && divisao <= 100) {
+        document.body.style.background = '#44FF51'
+        document.getElementById('calc').style.background = '#44FF51'
+
+    }
     
 }
